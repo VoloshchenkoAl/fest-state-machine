@@ -5,6 +5,12 @@ import { Button } from '@macpaw/macpaw-ui';
 /* @Hooks */
 import { useState } from 'react';
 
+/**
+ * Issues:
+ *
+ * - can click many times to load button
+ * - isCanceled is not working
+ */
 export default function Home() {
   const [wallpaper, setWallpaper] = useState(null);
   const [error, setError] = useState(null);
@@ -102,7 +108,7 @@ export default function Home() {
             {['🤖', '🌀', '🤖', '🌀', '🤖', '🌀', '🤖'].map((item, index) => (
               <span
                 className={`${index % 2 !== 0 ? 'animate-spin' : 'animate-bounce'}  inline-block`}
-                key={item}
+                key={item + index}
               >
                 {item}
               </span>

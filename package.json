@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@macpaw/macpaw-ui": "^4.5.4",
+    "@xstate/react": "^3.0.1",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "xstate": "^4.33.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
